@@ -1,4 +1,7 @@
 # Реални бројеви
+
+[Фотографије табле](https://photos.app.goo.gl/zC97wFZJQ9TFCfy96)
+
 ## Одређивање квадратних корена
 
 Popuni tabelu:
