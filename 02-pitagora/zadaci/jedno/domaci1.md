@@ -1,3 +1,4 @@
+[Џемини](gemini.google.com),
 Треба да вежбам једноставније задатке из области Питагорина теорема. Да ли можеш задати четири задатка за домаћи задатак?
 
 Naravno, rado ću ti postaviti četiri zadatka za vežbanje Pitagorine teoreme. Zapamti, Pitagorina teorema važi za pravougle trouglove i glasi:
