@@ -1,0 +1,452 @@
+%\documentclass{beamer}
+\documentclass[12pt,handout]{beamer}
+\usetheme{CambridgeUS}
+\usefonttheme{professionalfonts}
+\usepackage[OT2]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,serbian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{graphs,graphs.standard}
+\usepackage{forest}
+%\usetikzlibrary{graphs,graphdrawing}
+%\usegdlibrary{layered}
+\usetikzlibrary{graphs, graphs.standard, quotes}% quotes library is for the [""] edges
+
+\title{Примена Питагорине теореме}
+\author{систематизација}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Правоугли троугао}
+\begin{tikzpicture}
+\onslide<1->
+  % Чворови за формуле
+  \node[draw, rectangle] (FO) at (0,6) {$O = a+b+c$};
+  \node[draw, rectangle] (FP) at (0,4) {$P = \frac{ab}{2}$};
+  \node[draw, rectangle] (Fc) at (0,3) {$c^2 = a^2 + b^2$};
+  \node[draw, rectangle] (Fro) at (0,2) {$r_o = \frac c2$};
+  \node[draw, rectangle] (Fru) at (0,0) {$a+b = c+2r_u$};
+
+\onslide<2->
+  % Чворови за променљиве
+  \node[draw, circle] (VO) at (3,6) {$O$};
+  \node[draw, circle] (VP) at (3,5) {$P$};
+  \node[draw, circle] (Va) at (3,4) {$a$};
+  \node[draw, circle] (Vb) at (3,3) {$b$};
+  \node[draw, circle] (Vc) at (3,2) {$c$};
+  \node[draw, circle] (Vro) at (3,1) {$r_o$};
+  \node[draw, circle] (Vru) at (3,0) {$r_u$};
+
+\onslide<3->
+  % Гране између чворова
+  \draw (FO) -- (VO);
+  \draw (FO) -- (Va);
+  \draw (FO) -- (Vb);
+  \draw (FO) -- (Vc);
+  \draw (FP) -- (VP);
+  \draw (FP) -- (Va);
+  \draw (FP) -- (Vb);
+  \draw (Fc) -- (Vc);
+  \draw (Fc) -- (Va);
+  \draw (Fc) -- (Vb);
+  \draw (Fro) -- (Vro);
+  \draw (Fro) -- (Vc);
+  \draw (Fru) -- (Vru);
+  \draw (Fru) -- (Va);
+  \draw (Fru) -- (Vb);
+  \draw (Fru) -- (Vc);
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Правоугаоник и квадрат}
+\begin{tikzpicture}[node distance=1cm, auto]
+  % Stilovi za čvorove i grane
+  \tikzstyle{formula} = [draw, rectangle]
+  \tikzstyle{variable} = [draw, circle]
+
+\onslide<1->
+  % Чворови за формуле
+  \node[draw, rectangle] (FO) at (0,5) {$O = 2a + 2b$};
+  \node[draw, rectangle] (FP) at (0,3) {$P = ab$};
+  \node[draw, rectangle] (Fd) at (0,1) {$d^2 = a^2 + b^2$};
+  \node[draw, rectangle] (Fr) at (0,0) {$r_o = \frac d2$};
+
+  % Чворови за променљиве
+  \node[draw, circle] (VO) at (3,5) {$O$};
+  \node[draw, circle] (VP) at (3,4) {$P$};
+  \node[draw, circle] (Va) at (3,3) {$a$};
+  \node[draw, circle] (Vb) at (3,2) {$b$};
+  \node[draw, circle] (Vd) at (3,1) {$d$};
+  \node[draw, circle] (Vr) at (3,0) {$r_o$};
+
+\onslide<2->
+  % Гране између чворова
+  \draw (FO) -- (VO);
+  \draw (FO) -- (Va);
+  \draw (FO) -- (Vb);
+  \draw (FP) -- (VP);
+  \draw (FP) -- (Va);
+  \draw (FP) -- (Vb);
+  \draw (Fd) -- (Vd);
+  \draw (Fd) -- (Va);
+  \draw (Fd) -- (Vb);
+  \draw (Fr) -- (Vd);
+  \draw (Fr) -- (Vr);
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}
+\onslide<1->
+  % Чворови за формуле
+  \node[draw, rectangle] (FO) at (0,5) {$O = 4a$};
+  \node[draw, rectangle] (FP) at (0,4) {$P = a^2$};
+  \node[draw, rectangle] (Fd) at (0,3) {$d = a \sqrt{2}$};
+  \node[draw, rectangle] (Fru) at (0,1) {$r_u = \frac a2$};
+  \node[draw, rectangle] (Fro) at (0,0) {$r_o = \frac d2$};
+
+\onslide<2->
+  % Чворови за променљиве
+  \node[draw, circle] (VO) at (3,5) {$O$};
+  \node[draw, circle] (VP) at (3,4) {$P$};
+  \node[draw, circle] (Va) at (3,3) {$a$};
+  \node[draw, circle] (Vd) at (3,2) {$d$};
+  \node[draw, circle] (Vru) at (3,1) {$r_u$};
+  \node[draw, circle] (Vro) at (3,0) {$r_o$};
+
+  % Гране између чворова
+  \draw (FO) -- (VO);
+  \draw (FO) -- (Va);
+  \draw (FP) -- (VP);
+  \draw (FP) -- (Va);
+  \draw (Fd) -- (Vd);
+  \draw (Fd) -- (Va);
+  \draw (Fro) -- (Vro);
+  \draw (Fro) -- (Vd);
+  \draw (Fru) -- (Vru);
+  \draw (Fru) -- (Va);
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Једнакокраки и једнакостранични троугао}
+\begin{tikzpicture}
+\onslide<1->
+  % Чворови за формуле
+  \node[draw, rectangle] (FO) at (0,4) {$O = a+2b$};
+  \node[draw, rectangle] (FP) at (0,2) {$P = \frac{ah}{2}$};
+  \node[draw, rectangle] (Fh) at (0,0) {$h² = b² - (\frac{a}{2})²$};
+
+\onslide<1->
+  % Чворови за променљиве
+  \node[draw, circle] (VO) at (3,4) {$O$};
+  \node[draw, circle] (VP) at (3,3) {$P$};
+  \node[draw, circle] (Va) at (3,2) {$a$};
+  \node[draw, circle] (Vb) at (3,1) {$b$};
+  \node[draw, circle] (Vh) at (3,0) {$h$};
+
+  % Гране између чворова
+  \draw (FO) -- (VO);
+  \draw (FO) -- (Va);
+  \draw (FO) -- (Vb);
+  \draw (FP) -- (VP);
+  \draw (FP) -- (Va);
+  \draw (FP) -- (Vh);
+  \draw (Fh) -- (Vh);
+  \draw (Fh) -- (Va);
+  \draw (Fh) -- (Vb);
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}
+\onslide<1->
+  % Чворови за формуле
+  \node[draw, rectangle] (FO) at (0,5) {$O = 3a$};
+  \node[draw, rectangle] (FPa) at (0,4) {$P = \frac{a² \sqrt{3}}{4}$};
+  \node[draw, rectangle] (Fh) at (0,3) {$h = \frac{a \sqrt{3}}{2}$};
+  \node[draw, rectangle] (FP) at (0,2) {$P = \frac{ah}{2}$};
+  \node[draw, rectangle] (Fro) at (0,1) {$r_o = \frac 23 h$};
+  \node[draw, rectangle] (Fru) at (0,0) {$r_u = \frac 13 h$};
+
+\onslide<1->
+  % Чворови за променљиве
+  \node[draw, circle] (VO) at (3,5) {$O$};
+  \node[draw, circle] (Va) at (3,4) {$a$};
+  \node[draw, circle] (VP) at (3,3) {$P$};
+  \node[draw, circle] (Vh) at (3,2) {$h$};
+  \node[draw, circle] (Vro) at (3,1) {$r_o$};
+  \node[draw, circle] (Vru) at (3,0) {$r_u$};
+
+  % Гране између чворова
+  \draw (FO) -- (VO);
+  \draw (FO) -- (Va);
+  \draw (FPa) -- (VP);
+  \draw (FPa) -- (Va);
+  \draw (Fh) -- (Vh);
+  \draw (Fh) -- (Va);
+  \draw (FP) -- (VP);
+  \draw (FP) -- (Va);
+  \draw (FP) -- (Vh);
+  \draw (Fro) -- (Vro);
+  \draw (Fro) -- (Vh);
+  \draw (Fru) -- (Vru);
+  \draw (Fru) -- (Vh);
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Ромб}
+\begin{tikzpicture}
+\onslide<1->
+  % Чворови за формуле
+  \node[draw, rectangle] (FO) at (0,6) {$O = 4a$};
+  \node[draw, rectangle] (FPa) at (0,5) {$P = ah$};
+  \node[draw, rectangle] (FP) at (0,4) {$P = \frac{d_1 \cdot d_2}{2}$};
+  \node[draw, rectangle] (Fa) at (0,2) {$a² = (\frac{d_1}{2})² + (\frac{d_2}{2})²$};
+  \node[draw, rectangle] (Fru) at (0,0) {$r_u = \frac h2$};
+
+\onslide<1->
+  % Чворови за променљиве
+  \node[draw, circle] (VO) at (4,6) {$O$};
+  \node[draw, circle] (VP) at (4,5) {$P$};
+  \node[draw, circle] (Va) at (4,4) {$a$};
+  \node[draw, circle] (Vh) at (4,3) {$h$};
+  \node[draw, circle] (Vd1) at (4,2) {$d_1$};
+  \node[draw, circle] (Vd2) at (4,1) {$d_2$};
+  \node[draw, circle] (Vru) at (4,0) {$r_u$};
+
+  % Гране између чворова
+  \draw (FO) -- (VO);
+  \draw (FO) -- (Va);
+  \draw (FPa) -- (VP);
+  \draw (FPa) -- (Va);
+  \draw (FPa) -- (Vh);
+  \draw (FP) -- (VP);
+  \draw (FP) -- (Vd1);
+  \draw (FP) -- (Vd2);
+  \draw (Fa) -- (Va);
+  \draw (Fa) -- (Vd1);
+  \draw (Fa) -- (Vd2);
+  \draw (Fru) -- (Vru);
+  \draw (Fru) -- (Vh);
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Правоугли и једнакокраки трапез}
+\begin{tikzpicture}
+\onslide<1->
+  % Чворови за формуле
+  \node[draw, rectangle] (FO) at (0,6) {$O = a+b+c+h$};
+  \node[draw, rectangle] (FP) at (0,4) {$P = mh$};
+  \node[draw, rectangle] (Fm) at (0,2) {$m = \frac{a+b}{2}$};
+  \node[draw, rectangle] (Fh) at (0,0) {$h² = c² - (a-b)²$};
+
+\onslide<1->
+  % Чворови за променљиве
+  \node[draw, circle] (VO) at (3,6) {$O$};
+  \node[draw, circle] (VP) at (3,5) {$P$};
+  \node[draw, circle] (Va) at (3,4) {$a$};
+  \node[draw, circle] (Vb) at (3,3) {$b$};
+  \node[draw, circle] (Vc) at (3,2) {$c$};
+  \node[draw, circle] (Vm) at (3,1) {$m$};
+  \node[draw, circle] (Vh) at (3,0) {$h$};
+
+  % Гране између чворова
+  \draw (FO) -- (VO);
+  \draw (FO) -- (Va);
+  \draw (FO) -- (Vb);
+  \draw (FO) -- (Vc);
+  \draw (FO) -- (Vh);
+  \draw (FP) -- (VP);
+  \draw (FP) -- (Vm);
+  \draw (FP) -- (Vh);
+  \draw (Fm) -- (Vm);
+  \draw (Fm) -- (Va);
+  \draw (Fm) -- (Vb);
+  \draw (Fh) -- (Vh);
+  \draw (Fh) -- (Vc);
+  \draw (Fh) -- (Va);
+  \draw (Fh) -- (Vb);
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}
+\onslide<1->
+  % Чворови за формуле
+  \node[draw, rectangle] (FO) at (0,6) {$O = a+b+2c$};
+  \node[draw, rectangle] (FP) at (0,4) {$P = mh$};
+  \node[draw, rectangle] (Fm) at (0,2) {$m = \frac{a+b}{2}$};
+  \node[draw, rectangle] (Fh) at (0,0) {$h² = c² - (\frac{a-b}{2})²$};
+
+\onslide<1->
+  % Чворови за променљиве
+  \node[draw, circle] (VO) at (3,6) {$O$};
+  \node[draw, circle] (VP) at (3,5) {$P$};
+  \node[draw, circle] (Va) at (3,4) {$a$};
+  \node[draw, circle] (Vb) at (3,3) {$b$};
+  \node[draw, circle] (Vc) at (3,2) {$c$};
+  \node[draw, circle] (Vm) at (3,1) {$m$};
+  \node[draw, circle] (Vh) at (3,0) {$h$};
+
+  % Гране између чворова
+  \draw (FO) -- (VO);
+  \draw (FO) -- (Va);
+  \draw (FO) -- (Vb);
+  \draw (FO) -- (Vc);
+  \draw (FP) -- (VP);
+  \draw (FP) -- (Vm);
+  \draw (FP) -- (Vh);
+  \draw (Fm) -- (Vm);
+  \draw (Fm) -- (Va);
+  \draw (Fm) -- (Vb);
+  \draw (Fh) -- (Vh);
+  \draw (Fh) -- (Vc);
+  \draw (Fh) -- (Va);
+  \draw (Fh) -- (Vb);
+\end{tikzpicture}
+\end{frame}
+
+\end{document}
+
+\begin{frame}{Правоугаоник}
+\begin{forest}
+  for tree={
+    draw,
+    rectangle,
+    minimum size=1em,
+    inner sep=2pt,
+    parent anchor=south,
+    child anchor=north,
+    l sep=5mm,
+    s sep=5mm,
+  }
+  [{Правоугаоник}
+  [{$O = 2a + 2b$}
+    [{$O$}]
+    [{$a$}]
+    [{$b$}]
+  ]
+  [{$P = ab$}
+    [{$P$}]
+    [{$a$}]
+    [{$b$}]
+  ]
+  [{$d² = a² + b²$}
+    [{$d$}]
+    [{$a$}]
+    [{$b$}]
+  ]
+  [{$r_o = d/2$}
+    [{$r_o$}]
+    [{$d$}]
+  ]]
+\end{forest}
+\end{frame}
+
+\begin{frame}{Правоугаоник}
+\begin{forest}
+  for tree={
+    draw,
+    rectangle,
+    parent anchor=south,
+    child anchor=north,
+    l sep=1cm,
+  }
+  [
+    [{$O = 2a + 2b$}, tikz={\node[rectangle] at (.5,.5) {$O$};} ]
+    [{$P = ab$}, tikz={\node[rectangle] at (.5,.5) {$P$};} ]
+    [{$d^2 = a^2 + b^2$}, tikz={\node[rectangle] at (.5,.5) {$d^2$};} ]
+    [{$r_o = \frac{d}{2}$}, tikz={\node[rectangle] at (.5,.5) {$r_o$};} ]
+  ]
+  [
+    [{$O$}, tikz={\node[circle] at (.5,.5) {$O$};} ]
+    [{$P$}, tikz={\node[circle] at (.5,.5) {$P$};} ]
+    [{$a$}, tikz={\node[circle] at (.5,.5) {$a$};} ]
+    [{$b$}, tikz={\node[circle] at (.5,.5) {$b$};} ]
+    [{$d$}, tikz={\node[circle] at (.5,.5) {$d$};} ]
+    [{$r_o$}, tikz={\node[circle] at (.5,.5) {$r_o$};} ]
+  ]
+\end{forest}
+\end{frame}
+
+\begin{frame}{Бипартитни граф}
+    \begin{tikzpicture}[grow=right,sibling distance=6em,level distance=10em]
+%        \graph [layered layout] {
+        \graph {
+            subgraph cluster {
+                node [rectangle,draw] {"Питагорина теорема"};
+                node [rectangle,draw] {"Обим правоугаоника"};
+                node [rectangle,draw] {"Површина правоугаоника"};
+                node [rectangle,draw] {"Полупречник описаног круга"};
+            };
+            subgraph cluster {
+                node [circle,draw] {$a$};
+                node [circle,draw] {$b$};
+                node [circle,draw] {$c$};
+            };
+            {"Питагорина теорема"} -- {$a$};
+            {"Питагорина теорема"} -- {$b$};
+            {"Питагорина теорема"} -- {$c$};
+            % ... остале везе
+        };
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Povezanost formula i promenljivih}
+    \begin{tikzpicture}[>=latex]
+        \graph[layered layout, sibling distance=2cm, level distance=3cm] {
+            "Pitagorina teorema" -> {"a^2 + b^2 = c^2"};
+            "Obim pravouglog trougla" -> {"a + b + c"};
+            % Dodajte ostale formule i promenljive
+        };
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}%{Правоугаоник}
+\usetikzlibrary {graphs}
+\tikz [>={To[sep]}, rotate=90, xscale=-1,
+       mark/.style={fill=black!50}, mark/.default=]
+  \graph [trie, simple,
+          nodes={circle,draw},
+          edges={nodes={
+              inner sep=1pt, anchor=mid,
+              fill=graphicbackground}}, % yellowish background
+          put node text on incoming edges]
+    {
+      root[mark] -> {
+        a -> n -> {
+          g [mark],
+          f -> a -> n -> g [mark]
+        },
+        f -> a -> n -> g [mark],
+        g[mark],
+        n -> {
+          g[mark],
+          f -> a -> n -> g[mark]
+        }
+      },
+      { [edges=red] % highlight one path
+        root -> f -> a -> n
+      }
+    };
+\end{frame}
+
+\begin{frame}%{Правоугаоник}
+    \begin{tikzpicture}[scale=1.5]
+        \draw (0,0) rectangle (4,2);
+        \draw (0,0) -- (4,2);
+        \node at (2,1) {$a$};
+        \node at (1,0) {$b$};
+        \node at (2.5,2.2) {$c$};
+        \node at (3,1) {$d$};
+        \node at (2,-0.5) {O};
+        \draw (2,0) circle (1cm);
+        
+%        \node at (6,1) {Формуле:};
+        \node at (6,0.5) {$c^2 = a^2 + b^2$};
+        \node at (6,0) {$O = 2a + 2b$};
+        \node at (6,-0.5) {$P = ab$};
+        \node at (6,-1) {$r = \frac{c}{2}$};
+    \end{tikzpicture}
+\end{frame}
