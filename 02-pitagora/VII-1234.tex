@@ -1,0 +1,312 @@
+\documentclass[12pt,a5paper,addpoints]{exam}
+
+\usepackage{myPaper}
+\usepackage{multicol}
+\usepackage{amssymb,amsmath}
+\usepackage{epsf}
+
+%\usepackage[serbian]{babel}
+%\usepackage[OT2]{fontenc}
+%\usepackage[utf8]{inputenc}
+
+%\usepackage{ucs}
+\usepackage[OT2]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[serbian]{babel}
+%\usepackage{t2}
+
+\def\grupa#1#2#3#4{#1}
+\title{$\mathrm{VII}_\Box$, група \grupa 1234}
+\author{Први писмени задатак
+ \thanks{
+  19 одлично,
+  15 врло добро,
+  10 добро,
+   6 довољно.
+ }
+}
+\date{Станишић, 29.\ октобар 2024.}
+
+\printanswers
+%\renewcommand{\solutiontitle}{\noindent\textrm{Решење:}\enspace}
+\renewcommand{\solutiontitle}{}
+\pointsinmargin
+%\pointsinrightmargin
+\pointname{}
+%\marginpointname{\%}
+%\pagename{Страница}
+\hqword{Задатак:}
+\hpgword{Страница:}
+\hpword{Поени:}
+\hsword{Остварено:}
+\htword{Збир}
+\cellwidth{1em}
+%\gradetablestretch{1.1}
+\cfoot[]{Страница \thepage\ од \numpages}
+
+\def\abs|#1|{\left| #1 \right|}
+
+\hyphenation{
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{headandfoot}
+
+%\vspace*{\stretch 1}
+\noindent \gradetable[h]
+
+\begin{questions}
+
+\question[1] %01.
+ Катете правоуглог троугла су $\grupa tshv$ и $\grupa rdts$.
+ Изрази хипотенузу $\grupa hvrd$, преко датих катета.
+ \begin{solution}
+  $
+   \grupa
+    {h = \sqrt{t^2 + r^2}}
+    {v = \sqrt{s^2 + d^2}}
+    {r = \sqrt{h^2 + t^2}}
+    {d = \sqrt{v^2 + s^2}}
+  $
+ \end{solution}
+
+\question[4] %02.
+ Препиши и попуни табелу:
+ $$
+  \begin{array}{|*5{c|}} \hline
+   x & \grupa
+    {12 & -1,\!3 & \frac 34 & -1 \frac 56}
+    {11 & -1,\!4 & \frac 35 & -2 \frac 23}
+    {14 & -1,\!1 & \frac 56 & -1 \frac 34}
+    {13 & -1,\!2 & \frac 25 & -3 \frac 12}
+   \\\hline
+   x^2 & \phantom{121} & \phantom{1,\!44} & \phantom{\frac 4{25}} & \phantom{5 \frac 49} \\\hline
+   \sqrt{x^2} & & & & \\\hline
+  \end{array}
+ $$
+ \begin{solution}
+ $$
+  \begin{array}{|*5{c|}} \hline
+   x & \grupa
+    {12 & -1,\!3 & \frac 34 & -1 \frac 56 = - \frac{11}6}
+    {11 & -1,\!4 & \frac 35 & -2 \frac 23 = - \frac 83}
+    {14 & -1,\!1 & \frac 56 & -1 \frac 34 = - \frac 74}
+    {13 & -1,\!2 & \frac 25 & -3 \frac 12 = - \frac 72}
+   \\\hline
+   x^2 & \grupa
+    {144 & 1,\!69 & \frac 9{16} & 5 \frac{121}{36} = 3 \frac{13}{36}}
+    {121 & 1,\!96 & \frac 9{25} & 5 \frac{64}9 = 7 \frac 19}
+    {196 & 1,\!21 & \frac{25}{36} & 5 \frac{49}{16} = 3 \frac 1{16}}
+    {169 & 1,\!44 & \frac 4{25} & 5 \frac{49}4 = 12 \frac 14}
+   \\\hline
+   \sqrt{x^2} & \grupa
+    {12 & 1,\!3 & \frac 34 & 1 \frac 56 = \frac{11}6}
+    {11 & 1,\!4 & \frac 35 & 2 \frac 23 = \frac 83}
+    {14 & 1,\!1 & \frac 56 & 1 \frac 34 = \frac 74}
+    {13 & 1,\!2 & \frac 25 & 3 \frac 12 = \frac 72}
+   \\\hline
+  \end{array}
+ $$
+ \end{solution}
+
+\question[3] %03.
+ \grupa{Хипотенуза}{Једна катета}{Хипотенуза}{Једна катета}
+ правоуглог троугла је $\grupa{25}{15}{17}{16} \, \mathrm{cm}$ а
+ \grupa{једна катета}{хипотенуза}{једна катета}{хипотенуза} је
+ $\grupa{20}{25}{15}{20} \, \mathrm{cm}$.
+ Израчунај обим и површину тог троугла.
+ \begin{solution}
+ \begin{gather*}
+  \grupa caca = \grupa{25}{15}{17}{16} \, \mathrm{cm}, \qquad
+  \grupa acac = \grupa{20}{25}{15}{20} \, \mathrm{cm}
+  \\ b^2 = c^2 - a^2
+   = \grupa{25}{25}{17}{20}^2 - \grupa{20}{15}{15}{16}^2
+   = \grupa{625}{625}{289}{400} - \grupa{400}{225}{225}{256}
+   = \grupa{225}{400}{64}{144} \, \mathrm{cm}^2
+  \\ b
+   = \sqrt{\grupa{225}{400}{64}{144}}
+   = \grupa{15}{20}{8}{12} \, \mathrm{cm}
+  \\ {\cal O} = a+b+c
+   = \grupa{20+15+25}{15+20+25}{15+8+17}{16+12+20}
+   = \grupa{60}{60}{40}{48} \, \mathrm{cm}
+  \\ P = \frac{ab}2
+   = \frac{\grupa{20⋅15}{15⋅20}{15⋅8}{16⋅12}}2
+   = \grupa{10⋅15}{15⋅10}{15⋅4}{8⋅12}
+   = \grupa{150}{150}{60}{96} \, \mathrm{cm}²
+ \end{gather*}
+ \end{solution}
+
+\question[3] %04.
+ За $\grupa 8654 \, \mathrm{kg}$ јабука је плаћено
+ $\grupa{688}{564}{390}{324}$ динара.
+ Колико треба платити за
+ $\grupa 3487 \, \mathrm{kg}$ јабука?
+ \begin{solution}
+  Први начин:
+  \begin{gather*}
+   \grupa{688:8}{564:6}{390:5}{324:4}
+   = \grupa{(640+48):8}{(540+24):6}{(350+40):5}{(320+4):4}
+   = \grupa{86}{94}{78}{81} \, \text{дин} / \text{kg}
+   \\ \grupa{86⋅3}{94⋅4}{78⋅8}{81⋅7}
+   = \grupa{240+18}{360+16}{560+64}{560+7}
+   = \fbox{\grupa{258}{376}{624}{567}\,\text{дин}}
+   \text{ за } \grupa 3487 \, \text{kg} \text{ јабука}
+  \end{gather*}
+  Други начин:
+  \begin{gather*}
+   \grupa 8654 : \grupa{688}{564}{390}{324} = \grupa 3487 : x
+   \\ \grupa 8654 ⋅ x = \grupa{688}{564}{390}{324} ⋅ \grupa 3487
+   \\ x = \frac{\grupa{688}{564}{390}{324} ⋅ \grupa 3487}{\grupa 8654}
+    = \frac{\grupa{86⋅3}{94⋅4}{78⋅8}{81⋅7}}1
+    = \fbox{\grupa{258}{376}{624}{567}\,\text{дин}}
+  \end{gather*}
+ \end{solution}
+
+\newpage
+
+\question %05.
+ Између којих узастопних целих бројева су ирационални бројеви:
+% \begin{multicols}2
+ \begin{parts}
+ \part[1] $\sqrt{\grupa{19}{15}{26}{24}}$;
+ \begin{solution}
+  \begin{gather*}
+   \sqrt{\grupa{16}{9}{25}{16}} <
+   \sqrt{\grupa{19}{15}{26}{24}} <
+   \sqrt{\grupa{25}{16}{36}{25}} \\
+   \grupa{4}{3}{5}{4} <
+   \sqrt{\grupa{19}{15}{26}{24}} <
+   \grupa{5}{4}{6}{16}
+  \end{gather*}
+ \end{solution}
+ \part[2] $\sqrt{\grupa{17}{24}{15}{26}} - \grupa 3253$?
+ \begin{solution}
+  \begin{gather*}
+   \sqrt{\grupa{16}{16}{9}{25}} <
+   \sqrt{\grupa{17}{24}{15}{26}} <
+   \sqrt{\grupa{25}{25}{16}{36}} \\
+   \grupa{4}{4}{3}{5} <
+   \sqrt{\grupa{17}{24}{15}{26}} <
+   \grupa{5}{5}{4}{6} \\
+   \grupa{4-3}{4-2}{3-5}{5-3} <
+   \sqrt{\grupa{17}{24}{15}{26}} - \grupa 3253 <
+   \grupa{5-3}{5-2}{4-5}{6-3} \\
+   \grupa{1}{2}{-2}{2} <
+   \sqrt{\grupa{17}{24}{15}{26}} - \grupa 3253 <
+   \grupa{2}{3}{-1}{3}
+  \end{gather*}
+ \end{solution}
+ \end{parts}
+% \end{multicols}
+
+\newpage
+
+\question[4] %06.
+ Израчунај вредност израза
+ $$
+  \grupa{
+   \frac 23 ⋅ \sqrt{81} - 4 ⋅ \sqrt{\frac{25}{36}} + 6 ⋅ \sqrt{7 \frac 19}
+  }{
+   \frac 45 ⋅ \sqrt{1 \frac 9{16}} - 3 ⋅ \sqrt{\frac 49} + \frac 23 ⋅ \sqrt{2 \frac 14}
+  }{
+   \frac 34 ⋅ \sqrt{1 \frac 79} - \frac 12 ⋅ \sqrt{64} + 2 ⋅ \sqrt{0,\!04}
+  }{
+   \frac 34 ⋅ \sqrt{16} + 9 ⋅ \sqrt{\frac 49} - 6 ⋅ \sqrt{2 \frac 14}
+  }.
+ $$
+ \begin{solution}
+ \begin{align*}
+  \grupa{
+   \frac 23 ⋅ \sqrt{81} - 4 ⋅ \sqrt{\frac{25}{36}} + 6 ⋅ \sqrt{7 \frac 19}
+  }{
+   \frac 45 ⋅ \sqrt{1 \frac 9{16}} - 3 ⋅ \sqrt{\frac 49} + \frac 23 ⋅ \sqrt{2 \frac 14}
+  }{
+   \frac 34 ⋅ \sqrt{1 \frac 79} - \frac 12 ⋅ \sqrt{64} + 2 ⋅ \sqrt{0,\!04}
+  }{
+   \frac 34 ⋅ \sqrt{16} + 9 ⋅ \sqrt{\frac 49} - 6 ⋅ \sqrt{2 \frac 14}
+  }
+  &= \grupa{
+   \frac 23 ⋅ 9 - 4 ⋅ \frac 56 + 6 ⋅ \sqrt{\frac{64}9}
+  }{
+   \frac 45 ⋅ \sqrt{\frac{25}{16}} - 3 ⋅ \frac 23 + \frac 23 ⋅ \sqrt{\frac 94}
+  }{
+   \frac 34 ⋅ \sqrt{\frac{16}9} - \frac 12 ⋅ 8 + 2 ⋅ 0,\!2
+  }{
+   \frac 34 ⋅ 4 + 9 ⋅ \frac 23 - 6 ⋅ \sqrt{\frac 94}
+  }
+  \\ &= \grupa{
+   \frac 23 ⋅ \frac 91 - \frac 41 ⋅ \frac 56 + \frac 61 ⋅ \frac 83
+  }{
+   \frac 45 ⋅ \frac 54 - \frac 31 ⋅ \frac 23 + \frac 23 ⋅ \frac 32
+  }{
+   \frac 34 ⋅ \frac 43 - \frac 12 ⋅ \frac 81 + 0,\!4
+  }{
+   \frac 34 ⋅ \frac 41 + \frac 91 ⋅ \frac 23 - \frac 61 ⋅ \frac 32
+  }
+  \\ &= \grupa{
+   \frac 61 - \frac{10}3 + \frac{16}1
+  }{
+   \frac 11 - \frac 21 + \frac 11
+  }{
+   \frac 11 - \frac 41 + 0,\!4
+  }{
+   \frac 31 + \frac 61 - \frac 91
+  }
+  \\ &= \grupa{22 - 3\frac 13}{-1+1}{-3 + 0,\!4}{9-9}
+  = \grupa{18 \frac 23}{0}{-2,\!6}{0}
+ \end{align*}
+ \end{solution}
+
+\question[4] %07.
+ Израчунај обим и површину ромба чије су дијагонале
+ $\grupa{8}{24}{16}{9} \, \mathrm{cm}$ и
+ $\grupa{15}{7}{12}{12} \, \mathrm{cm}$.
+ \begin{solution}
+ $$
+ \begin{aligned}
+  d_1 = \grupa{8}{24}{16}{9} \, \mathrm{cm}, &\quad
+  d_1 = \grupa{15}{7}{12}{12} \, \mathrm{cm}
+  \\ \grupa
+   {(2a)² &= {d_1}² + {d_2}²}
+   {(2a)² &= {d_1}² + {d_2}²}
+   {a² &= (\frac{d_1}2)² + (\frac{d_2}2)²}
+   {(2a)² &= {d_1}² + {d_2}²}
+  \\ \grupa
+   {(2a)² &= 8² + 15²}
+   {(2a)² &= 24² + 7²}
+   {a² &= (\frac{16}2)² + (\frac{12}2)²}
+   {(2a)² &= 9² + 12²}
+  \\ \grupa
+   {(2a)² &= 64 + 225}
+   {(2a)² &= 576 + 49}
+   {a² &= 8² + 6²}
+   {(2a)² &= 81 + 144}
+  \\ \grupa{(2a)² &= 289}{(2a)² &= 625}{a² &= 64 + 36}{(2a)² &= 225}
+  \\ \grupa
+   {2a &= \sqrt{289}}
+   {2a &= \sqrt{625}}
+   {a² &= 100}
+   {2a &= \sqrt{225}}
+ \end{aligned} \quad
+ \begin{aligned}
+  \grupa{2a &= 17}{2a &= 25}{a² &= \sqrt{100}}{2a &= 15}
+  \\ a &= \grupa{8,\!5}{12,\!5}{10}{7,\!5} \, \mathrm{cm}
+  \\ {\cal O} &= 4a
+  = 4 ⋅ \grupa{8,\!5}{12,\!5}{10}{7,\!5}
+  = \fbox{\grupa{34}{50}{40}{30}} \, \mathrm{cm}
+  \\ P &= \frac{d_1 ⋅ d_2}2
+  = \frac{ \grupa{8 ⋅ 15}{24 ⋅ 7}{16 ⋅ 12}{9 ⋅ 12} }2
+  \\ P &= \grupa{4 ⋅ 15}{12 ⋅ 7}{8 ⋅ 12}{9 ⋅ 6}
+  = \fbox{\grupa{60}{84}{96}{54}} \, \mathrm{cm}²
+ \end{aligned}
+ $$
+ \end{solution}
+
+\end{questions}
+
+\end{document}
+%\{} ^2
+% $2,\!5 \,\mathrm{cm}$
+% \begin{multicols}2
