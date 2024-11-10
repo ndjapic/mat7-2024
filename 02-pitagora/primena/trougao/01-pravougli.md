@@ -6,7 +6,7 @@
 
 ```mermaid
 graph LR;
-    PT[c^2=a^2+b^2] --> C{c};
+    PT[c&sup2;=a&sup2;+b&sup2;] --> C{c};
     A{a} --> PT;
     B{b} --> PT;
     FO[O=a+b+c] --> O{O};
