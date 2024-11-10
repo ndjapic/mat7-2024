@@ -11,15 +11,15 @@
 ```mermaid
 graph TD;
     PT[c^2=a^2+b^2] --> C{c};
-    PT --> A{a};
-    PT --> B{b};
+    A{a} --> PT;
+    B{b} --> PT;
     FO[O=a+b+c] --> O{O};
-    FO --> A{a};
-    FO --> B{b};
-    FO --> C{c};
+    A --> FO;
+    B --> FO;
+    C --> FO;
     FP[P=ab/2] --> P{P};
-    FP --> A{a};
-    FP --> B{b};
+    A --> FP;
+    B --> FP;
 ```
 
 ```mermaid
