@@ -12,12 +12,12 @@ graph LR;
     PT["a² = (d_1 / 2)² + (d_2 / 2)²"] --> A{a};
     D1{d_1} --> PT;
     D2{d_2} --> PT;
-    Fru["r_u = h/2"] --> ru{r_u};
-    H --> Fru;
     FPd[P = d_1 d_2 / 2] --> P{P};
     D1 --> FPd;
     D2 --> FPd;
     FPh[P = ah] --> P{P};
     A --> FPh;
     H{h} --> FPh;
+    Fru["r_u = h/2"] --> ru{r_u};
+    H --> Fru;
 ```
