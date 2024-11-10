@@ -7,7 +7,7 @@
 
 ```mermaid
 graph LR;
-    PT["h^2 = b^2 - (a/2)^2"] --> H{h};
+    PT["h² = b² - (a/2)²"] --> H{h};
     A{a} --> PT;
     B{b} --> PT;
     FO[O = a+2b] --> O{O};
