@@ -7,3 +7,18 @@
 - [Pythagorean Theorem II (visual proof)](https://www.youtube.com/watch?v=yfGtbNgcrQ8)
 - [How many ways are there to prove the Pythagorean theorem?](https://www.youtube.com/watch?v=YompsDlEdtc)
 - [Visual Proof of Pythagoras' Theorem](https://www.youtube.com/watch?v=tTHhBE5lYTg)
+
+```mermaid
+graph TD;
+    node_string '$c^2=a^2+b^2$' -- node_string '$c$';
+    node_string '$c^2=a^2+b^2$' -- node_string '$a$';
+    node_string '$c^2=a^2+b^2$' -- node_string '$b$';
+```
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
