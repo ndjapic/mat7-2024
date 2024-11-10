@@ -9,7 +9,7 @@
 - [Visual Proof of Pythagoras' Theorem](https://www.youtube.com/watch?v=tTHhBE5lYTg)
 
 ```mermaid
-graph TD;
+graph LR;
     PT[c^2=a^2+b^2] --> C{c};
     A{a} --> PT;
     B{b} --> PT;
