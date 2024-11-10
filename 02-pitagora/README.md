@@ -10,15 +10,15 @@
 
 ```mermaid
 graph TD;
-    node_string '$c^2=a^2+b^2$' -- node_string '$c$';
-    node_string '$c^2=a^2+b^2$' -- node_string '$a$';
-    node_string '$c^2=a^2+b^2$' -- node_string '$b$';
+    PT[node_string '$c^2=a^2+b^2$'] <-- C{node_string '$c$'};
+    PT[node_string '$c^2=a^2+b^2$'] <-- A{node_string '$a$'};
+    PT[node_string '$c^2=a^2+b^2$'] <-- B{node_string '$b$'};
 ```
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
+    A<-->B;
+    A -- C;
     B-->D;
-    C-->D;
+    C<-->D;
 ```
