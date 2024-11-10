@@ -8,10 +8,10 @@
 ```mermaid
 graph LR;
     FO[O = 3a] --> O{O};
-    A --> FO;
-    PT["h = (a √3) / 2"] --> H{h};
-    A{a} --> PT;
-    FP["P = (a² √3) / 4"] --> P{P};
+    A{a} --> FO;
+    PT["h = a√3 / 2"] --> H{h};
+    A --> PT;
+    FP["P = a²√3 / 4"] --> P{P};
     A --> FP;
     Fro["r_o = 2h/3"] --> ro{r_o};
     Fru["r_u = h/3"] --> ru{r_u};
