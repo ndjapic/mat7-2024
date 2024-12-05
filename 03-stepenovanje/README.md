@@ -3,6 +3,7 @@
 | [Фотографије][1]
 | [Каталог][2]
 | [Контролни][3]
+| [2024-11-18][4]
 |
 
 ## Наставне јединице
@@ -31,6 +32,7 @@
 [1]: https://photos.app.goo.gl/2TMTLbhDnCyECAuS7 "Фотографије табле"
 [2]: https://ndjapic.github.io/zayopa/m7/03-polinomi1/ "Каталог линкова"
 [3]: https://drive.google.com/drive/folders/0B-Ml4P4pFIzwOGU4MzZkMDYtNTRlYS00ZTE4LWFmZDQtNThiMTAzOTI5ZGQ4?resourcekey=0-_6KNMrtNaPWMTctdWZmpbQ&usp=drive_link "Претходни контролни задаци"
+[4]: https://drive.google.com/drive/folders/1bOqWh3vaiJCtWQkvnPxwJrfFKazZi1wn?usp=drive_link "2024-11-18"
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
