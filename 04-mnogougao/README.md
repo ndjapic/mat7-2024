@@ -3,9 +3,9 @@
 ## Први део
 
 | [Фотографије](https://photos.app.goo.gl/c3JteV79S62XUEE56)
-| Задаци
-[Гугл диск](https://drive.google.com/drive/folders/1nmrL8scoyBmUrHNwRNxmLLGHFsflK_PD?usp=drive_link)
-[Оверлиф](https://www.overleaf.com/read/tzbvnfywhcgm#454ac7)
+| Задаци:
+| [Гугл диск](https://drive.google.com/drive/folders/1nmrL8scoyBmUrHNwRNxmLLGHFsflK_PD?usp=drive_link)
+| [Оверлиф](https://www.overleaf.com/read/tzbvnfywhcgm#454ac7)
 |
 
 ### Број дијагонала многоугла
