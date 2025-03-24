@@ -13,7 +13,7 @@
 - Сабирање сличних монома. Сређен облик полинома
 - Сабирање полинома
 - Множење монома. Множење полинома мономом
-- Множење полинома полиномом
+- Множење полинома полиномом | [FOIL][4]
 - Множење полинома
 - Рачунске операције са полиномима
 
@@ -36,3 +36,4 @@
 [1]: https://photos.app.goo.gl/hkwgpWrrKvJiapDHA "Фотографије табле"
 [2]: https://ndjapic.github.io/zayopa/m7/05-polinomi2/ "Каталог линкова"
 [3]: https://drive.google.com/drive/folders/0B-Ml4P4pFIzwODE2OGI2ZjMtZTU3MS00NzNhLTg1YTUtMWMxZjU5ZGMzYWMz?resourcekey=0-qRVN4qeHG06MhxpbnWqMoA&usp=drive_link "Претходни контролни задаци"
+[4]: https://static.tutors.com/assets/images/content/tutors-how-to-foil.jpg "FOIL метод за множење два бинома"
