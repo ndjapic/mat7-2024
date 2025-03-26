@@ -2,10 +2,10 @@
 
 ## Први део
 
-| [Фотографије](https://photos.app.goo.gl/c3JteV79S62XUEE56)
+| [Фотографије][1]
 | Задаци:
-| [Гугл диск](https://drive.google.com/drive/folders/1nmrL8scoyBmUrHNwRNxmLLGHFsflK_PD?usp=drive_link)
-| [Оверлиф](https://www.overleaf.com/read/tzbvnfywhcgm#454ac7)
+| [Гугл диск][2]
+| [Оверлиф][3]
 |
 
 ### Број дијагонала многоугла
@@ -20,8 +20,8 @@
 
 ## Други део
 
-| [Фотографије](https://photos.app.goo.gl/9PvokZRnD2Wv6Trr8)
-| [Писмени задатак](https://drive.google.com/drive/folders/1s20ilG0-_XL26c28QOp8ZyHLs8s4FH03?usp=sharing)
+| [Фотографије][4]
+| [Писмени задатак][5]
 |
 
 ### Правилни многоуглови 
@@ -30,3 +30,9 @@
 ### Конструкције неких правилних многоуглова 
 ### Геометријске конструкције 
 ### Обим и површина многоугла 
+
+[1]: https://photos.app.goo.gl/c3JteV79S62XUEE56 "Фотографије табле"
+[2]: https://drive.google.com/drive/folders/1nmrL8scoyBmUrHNwRNxmLLGHFsflK_PD?usp=drive_link "Гугл диск"
+[3]: https://www.overleaf.com/read/tzbvnfywhcgm#454ac7 "Оверлиф"
+[4]: https://photos.app.goo.gl/9PvokZRnD2Wv6Trr8 "Фотографије табле"
+[5]: https://drive.google.com/drive/folders/1s20ilG0-_XL26c28QOp8ZyHLs8s4FH03?usp=sharing "Писмени задатак"
