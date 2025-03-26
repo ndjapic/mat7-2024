@@ -21,6 +21,7 @@
 ## Други део
 
 | [Фотографије](https://photos.app.goo.gl/9PvokZRnD2Wv6Trr8)
+| [Писмени задатак](https://drive.google.com/drive/folders/1s20ilG0-_XL26c28QOp8ZyHLs8s4FH03?usp=sharing)
 |
 
 ### Правилни многоуглови 
