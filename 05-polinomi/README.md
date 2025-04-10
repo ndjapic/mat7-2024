@@ -3,6 +3,7 @@
 | [Фотографије][1]
 | [Каталог][2]
 | [Контролни][3]
+| [Контролни][5]
 |
 
 ## Наставне јединице
@@ -37,3 +38,4 @@
 [2]: https://ndjapic.github.io/zayopa/m7/05-polinomi2/ "Каталог линкова"
 [3]: https://drive.google.com/drive/folders/0B-Ml4P4pFIzwODE2OGI2ZjMtZTU3MS00NzNhLTg1YTUtMWMxZjU5ZGMzYWMz?resourcekey=0-qRVN4qeHG06MhxpbnWqMoA&usp=drive_link "Претходни контролни задаци"
 [4]: https://static.tutors.com/assets/images/content/tutors-how-to-foil.jpg "FOIL метод за множење два бинома"
+[5]: https://drive.google.com/file/d/1x9UbOgZzIZeIpWMm8awJaGWZ41vC3ZEO/view?usp=drive_link "Контролни задатак"
