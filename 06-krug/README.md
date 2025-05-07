@@ -2,6 +2,7 @@
 
 | [Фотографије][1]
 | [Каталог][2]
+| [Контролни][3]
 |
 
 ## Наставне јединице
@@ -26,3 +27,4 @@
 
 [1]: https://photos.app.goo.gl/hkwgpWrrKvJiapDHA "Фотографије табле"
 [2]: https://ndjapic.github.io/zayopa/m7/07-krug/ "Каталог линкова"
+[3]: https://drive.google.com/drive/folders/0B-Ml4P4pFIzwcjlmX2F3RG13aDQ?resourcekey=0-3Gyp3pbFSusA1B_RrIOBuA&usp=drive_link "Претходни контролни задаци"
