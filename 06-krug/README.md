@@ -25,6 +25,6 @@
 - израчуна обим и површину круга и његових делова;
 - преслика дати геометријски објекат ротацијом.
 
-[1]: https://photos.app.goo.gl/hkwgpWrrKvJiapDHA "Фотографије табле"
+[1]: https://photos.app.goo.gl/gZjrAxM27yvUhKhv7 "Фотографије табле"
 [2]: https://ndjapic.github.io/zayopa/m7/07-krug/ "Каталог линкова"
 [3]: https://drive.google.com/drive/folders/0B-Ml4P4pFIzwcjlmX2F3RG13aDQ?resourcekey=0-3Gyp3pbFSusA1B_RrIOBuA&usp=drive_link "Претходни контролни задаци"
