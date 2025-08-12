@@ -1,0 +1,485 @@
+\documentclass[11pt,a5paper,twoside,addpoints,noanswers]{exam} % задаци
+%\documentclass[10pt,a5paper,twoside,addpoints,answers]{exam} % решења
+
+\usepackage[OT2]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[serbian]{babel}
+\usepackage{multicol}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a5paper, margin=1.5cm}
+
+% Макро за јединице мере
+\newcommand{\measure}[2]{#1\,\mathrm{#2}}
+
+% Макро за варијанте
+\newcommand{\variant}[4]{#1}
+
+% Подешавања за exam
+%\printanswers % <- откоментаришите да бисте видели решења
+\renewcommand{\solutiontitle}{\noindent\textrm{Решење:}\enspace}
+\pointsinmargin
+\pointname{}
+\hqword{Задатак:}
+\hpgword{Страница:}
+\hpword{Поени:}
+\hsword{Остварено:}
+\htword{Збир}
+\vqword{Задатак:}
+\vpgword{Страница:}
+\vpword{Поени:}
+\vsword{Остварено:}
+\vtword{Збир}
+\cellwidth{1em}
+\cfoot[]{Страница \thepage\ од \numpages}
+\addto{\captionsserbian}{\renewcommand{\abstractname}{Упутство}}
+
+\title{Припремна настава}
+\author{$\mathrm{VII}_\Box$ Примена Питагорине теореме. Степеновање
+ \thanks{
+  33 одлично,
+  25 врло добро,
+  17 добро,
+   9 довољно.
+ }
+}
+\date{Станишић, 12.\ август 2025.}
+
+\pagestyle{headandfoot}
+%\firstpageheader{Примена Питагорине теореме. Степеновање}
+%	{}{варијанта \variant 1234}
+\runningheader{Примена Питагорине теореме. Степеновање}
+	{}{варијанта \variant 1234}
+%\firstpagefooter{Припремна настава}
+%	{}{Страна \thepage\ од \numpages}
+\runningfooter{уторак}
+	{}{Страна \thepage\ од \numpages}
+
+\begin{document}
+\maketitle
+\thispagestyle{headandfoot}
+
+\ifprintanswers\else
+\begin{flushleft}
+\gradetable[v]\newpage
+\end{flushleft}
+\fi
+
+\begin{questions}
+
+\question %01.
+Израчунај:
+ \begin{multicols}{3}
+ \begin{parts}
+ \part[1] $2^{\variant{8}{7}{9}{6}}$;
+ \part[1] $10^{\variant{6}{7}{5}{6}}$;
+ \part[1] $\variant{3^5}{5^4}{3^6}{5^3}$.
+ \end{parts}
+ \end{multicols}
+
+\begin{solution}[\stretch 1]
+%\begin{multicols}{3}
+\begin{parts}
+\part $2^{\variant{8}{7}{9}{6}}=\variant{256}{128}{512}{64}$.
+\part $10^{\variant{6}{7}{5}{6}}=\variant{1\,000\,000}{10\,000\,000}{100\,000}{1\,000\,000}$.
+\part $\variant{3^5}{5^4}{3^6}{5^3}=\variant{243}{625}{729}{125}$.
+\end{parts}
+%\end{multicols}
+\end{solution}
+
+\question %02.
+Запиши у облику степена:
+% \begin{multicols}{2}
+ \begin{parts}
+ \part[1] \variant{
+  $0,\!3 \cdot 0,\!3 \cdot 0,\!3 \cdot 0,\!3 \cdot 0,\!3$
+ }{
+  $2,\!1 \cdot 2,\!1 \cdot 2,\!1 \cdot 2,\!1$
+ }{
+  $0,\!6 \cdot 0,\!6 \cdot 0,\!6 \cdot 0,\!6 \cdot 0,\!6$
+ }{
+  $1,\!4 \cdot 1,\!4 \cdot 1,\!4 \cdot 1,\!4$
+ };
+ \part[1] $\displaystyle \variant{
+  \left( -\frac{4}{3} \right) \cdot
+  \left( -\frac{4}{3} \right) \cdot
+  \left( -\frac{4}{3} \right) \cdot
+  \left( -\frac{4}{3} \right)
+ }{
+  \frac{\sqrt{6}}{4} \cdot
+  \frac{\sqrt{6}}{4} \cdot
+  \frac{\sqrt{6}}{4} \cdot
+  \frac{\sqrt{6}}{4} \cdot
+  \frac{\sqrt{6}}{4} \cdot
+  \frac{\sqrt{6}}{4} \cdot
+  \frac{\sqrt{6}}{4}
+ }{
+  \left( -\frac{5}{2} \right) \cdot
+  \left( -\frac{5}{2} \right) \cdot
+  \left( -\frac{5}{2} \right) \cdot
+  \left( -\frac{5}{2} \right) \cdot
+  \left( -\frac{5}{2} \right)
+ }{
+  \sqrt{\frac{3}{7}} \cdot
+  \sqrt{\frac{3}{7}} \cdot
+  \sqrt{\frac{3}{7}} \cdot
+  \sqrt{\frac{3}{7}} \cdot
+  \sqrt{\frac{3}{7}}
+ }$.
+ \end{parts}
+% \end{multicols}
+
+\begin{solution}%[\stretch 1]
+\begin{multicols}{2}
+\begin{parts}
+\part $\variant{0,\!3^5}{2,\!1^4}{0,\!6^5}{1,\!4^4}$
+\part $\displaystyle \variant{
+	\left(-\frac{4}{3}\right)^4
+}{
+	\left(\frac{\sqrt{6}}{4}\right)^7
+}{
+	\left(-\frac{5}{2}\right)^5
+}{
+	\left(\sqrt{\frac{3}{7}}\right)^5
+	% = \left(\frac{3}{7}\right)^{5/2}
+}$
+\end{parts}
+\end{multicols}
+\end{solution}
+
+\question[3] %03.
+Поређај бројеве од најмањег до највећег:
+\[
+\variant
+ {2^7,\quad 5^3,\quad 11^2,\quad 4^3}
+ {9^2,\quad 3^4,\, 2^6,\quad 5^3}
+ {2^6,\quad 11^2,\quad 5^3,\quad 4^3}
+ {3^4,\quad 2^7,\quad 10^2,\quad 5^3}.
+\]
+
+\begin{solution}[\stretch 2]
+\variant{
+	$4^3=64,\; 5^3=125,\; 11^2=121,\; 2^7=128$.
+	Редослед: $64 < 121 < 125 < 128$.
+	\quad \fbox{$4^3 < 11^2 < 5^3 < 2^7$}.
+}{
+	$2^6=64,\; 3^4=81,\; 5^3=125,\; 9^2=81$
+	-- уочите $9^2$ и $3^4$; оба су 81.
+	Редослед: $64 < 81 = 81 < 125$.
+	\quad \fbox{$2^6 \leqslant 3^4 \leqslant 9^2 \leqslant 5^3$}.
+}{
+	$2^6=64,\; 4^3=64,\; 5^3=125,\; 11^2=121$.
+	-- уочите $2^6$ и $4^3$; оба су 64.
+	Редослед: $64 = 64 < 121 < 125$.
+	\quad \fbox{$2^6 \leqslant 4^3 \leqslant 11^2 \leqslant 5^3$}.
+}{
+	$3^4=81,\; 5^3=125,\; 10^2=100,\; 2^7=128$.
+	Редослед: $81 < 100 < 125 < 128$.
+	\quad \fbox{$3^4 < 10^2 < 5^3 < 2^7$}.
+}
+\end{solution}
+
+\question %04.
+ Поједностави израз:
+ \begin{multicols}{2}
+ \begin{parts}
+ \part[1] $\displaystyle \variant
+  {\frac{x^6}{x^7}}
+  {\frac{a^7}{a^5}}
+  {\frac{y^9}{y^{10}}}
+  {\frac{c^{13}}{c^9}}
+ $;
+ \part[2] $\displaystyle \variant
+  {\frac{t^{14} \cdot t^4}{t^{18}}}
+  {\frac{s^{13}}{s^6 \cdot s^9}}
+  {\frac{a^{16}}{a^6 \cdot a^{11}}}
+  {\frac{x^{11} \cdot x^6}{x^{19}}}
+ $.
+ \end{parts}
+ \end{multicols}
+
+\begin{solution}[\stretch 1]
+\begin{multicols}{2}
+\begin{parts}
+\part $\displaystyle \variant
+	{\frac{x^6}{x^7} = x^{-1} = \frac{1}{x}}
+	{\frac{a^7}{a^5} = a^2}
+	{\frac{y^9}{y^{10}} = y^{-1} = \frac{1}{y}}
+	{\frac{c^{13}}{c^9} = c^4}
+$.
+\part $\displaystyle \variant
+	{\frac{t^{14}\cdot t^4}{t^{18}} = t^0 = 1}
+	{\frac{s^{13}}{s^6\cdot s^9} = s^{-2} = \frac{1}{s^2}}
+	{\frac{a^{16}}{a^6\cdot a^{11}} = a^{-1} = \frac{1}{a}}
+	{\frac{x^{11}\cdot x^6}{x^{19}} = x^{-2} = \frac{1}{x^2}}
+$.
+\end{parts}
+\end{multicols}
+\end{solution}
+\ifprintanswers\else\newpage\fi
+
+\question %05.
+ Израчунај вредност израза
+ \begin{multicols}{2}
+ \begin{parts}
+ \part[1] $\displaystyle \variant
+  {\frac{2^{12}}{2^9}}
+  {\frac{4^6}{2^7}}
+  {\frac{5^7}{5^5}}
+  {\frac{3^9}{3^{10}}}
+ $;
+ \part[3] $\displaystyle \variant
+  {\frac{4^8}{2^6 \cdot 8^3}}
+  {\frac{4^5 \cdot 8^2}{2^{17}}}
+  {\frac{8^4}{4^3 \cdot 2^8}}
+  {\frac{8^5 \cdot 2^3}{4^9}}
+ $.
+ \end{parts}
+ \end{multicols}
+
+\begin{solution}[\stretch 2]
+\begin{multicols}{2}
+\begin{parts}
+\part $\displaystyle \variant
+	{ \frac{2^{12}}{2^9} = 2^3 = 8 }
+	{ \frac{4^6}{2^7}
+		= \frac{(2^2)^6}{2^7}
+		= \frac{2^{12}}{2^7} = 2^5 = 32 }
+	{ \frac{5^7}{5^5} = 5^2 = 25 }
+	{ \frac{3^9}{3^{10}} = 3^{-1} = \frac 13 }
+$.
+\part $\displaystyle \variant{
+	\frac{4^8}{2^6 \cdot 8^3}
+	= \frac{2^{16}}{2^6 \cdot 2^9}
+	= 2^{16-15} = 2^1 = 2
+}{
+	\frac{4^5 \cdot 8^2}{2^{17}}
+	= \frac{2^{10} \cdot 2^6}{2^{17}}
+	= 2^{-1} = \frac 12
+}{
+	\frac{8^4}{4^3 \cdot 2^8}
+	= \frac{2^{12}}{2^6 \cdot 2^8}
+	= 2^{-2} = \frac 14
+}{
+	\frac{8^5\cdot 2^3}{4^9}
+	= \frac{2^{15}\cdot 2^3}{2^{18}}
+	= 2^0 = 1
+}$
+\end{parts}
+\end{multicols}
+\end{solution}
+
+\question[3] %06.
+ За коју вредност променљиве $x$ је тачна једнакост
+ \(
+  \variant
+   {2^x = 4^6}
+   {(6^{2x})^3 = 6^{48}}
+   {(5^2)^{3x} = 5^{30}}
+   {8^x = 2^{27}}
+ \)?
+ 
+\begin{solution}[\stretch 2]
+$\variant
+	{2^x=4^6=(2^2)^6=2^{12}\Rightarrow x=12}
+	{(6^{2x})^3=6^{6x}=6^{48}\Rightarrow 6x=48\Rightarrow x=8}
+	{(5^2)^{3x}=5^{6x}=5^{30}\Rightarrow 6x=30\Rightarrow x=5}
+	{8^x=(2^3)^x=2^{3x}=2^{27}\Rightarrow 3x=27\Rightarrow x=9}
+$.
+\end{solution}
+
+\question[3] %07.
+ Напиши број \variant{256}{15625}{729}{512}
+ као степен са основом \variant{2}{5}{3}{2},
+ а затим као степен са основом \variant{4}{25}{9}{8}.
+
+\begin{solution}[\stretch 2]
+Растављање на просте чиниоце:
+$\variant{256 = 2^8}{15625 = 5^6}{729 = 3^6}{512 = 2^9}$.
+Са основом $\variant{4}{25}{9}{8}$:
+$\variant{256 = 4^4}{15625 = 25^3}{729 = 9^3}{512 = 8^3}$, јер је
+$$
+	\variant{
+		(2 \cdot 2) \cdot (2 \cdot 2) \cdot
+		(2 \cdot 2) \cdot (2 \cdot 2) = 256
+	}{
+		(5 \cdot 5) \cdot
+		(5 \cdot 5) \cdot
+		(5 \cdot 5) = 15625
+	}{
+		(3 \cdot 3) \cdot
+		(3 \cdot 3) \cdot
+		(3 \cdot 3) = 729
+	}{
+		(2 \cdot 2 \cdot 2) \cdot
+		(2 \cdot 2 \cdot 2) \cdot
+		(2 \cdot 2 \cdot 2) = 512
+	}.
+$$
+\end{solution}
+
+% ------------------------------
+% ДОДАТИ ПИТАГОРИНУ: примена на различите фигуре
+% ------------------------------
+
+\question[4] %08.
+%(Питагорина – једнакокраки троугао)  
+Једнакокраки троугао има основицу
+$\measure{\variant{10}{12}{14}{8}}{cm}$,
+а висина која је нормална на основицу је
+$\measure{\variant{8}{9}{10}{6}}{cm}$.
+Израчунај дужину крака, обим и површину троугла.
+
+\begin{solution}[\stretch 3]
+Означимо крак са $b$. Половина основице је $
+	\frac{\measure{\variant{10}{12}{14}{8}}{cm}}2
+	=\measure{\variant{5}{6}{7}{4}}{cm}
+$. На основу Питагорине теореме:
+\[
+	b = \sqrt{
+		\variant{5}{6}{7}{4}^2 + \variant{8}{9}{10}{6}^2
+	}
+	= \sqrt{\variant{25+64}{36+81}{49+100}{16+36}}
+	= \measure{
+		\variant{\sqrt{89}}{\sqrt{117}}{\sqrt{149}}{\sqrt{52}}
+	}{cm}.
+\]
+Обим:
+$
+	O = \variant{10}{12}{14}{8} + 2b
+	= \measure{(
+		\variant{10}{12}{14}{8} +
+		\variant{2 \sqrt{89}}{2 \sqrt{117}}{2 \sqrt{149}}{4 \sqrt{13}}
+	)}{cm}
+$.
+Површина:
+$$
+	P = \frac{1}{2}\cdot
+	\measure{\variant{10}{12}{14}{8}}{cm} \cdot
+	\measure{\variant{8}{9}{10}{6}}{cm}
+	= \measure{\variant{40}{54}{70}{24}}{cm^2}.
+$$
+\end{solution}
+\ifprintanswers\else\newpage\fi
+
+\question[4] %09.
+%(Питагорина – једнакостранични троугао)  
+У једнакостраничном троуглу страница је $\measure{\variant{6}{9}{12}{8}}{cm}$. Израчунај висину, обим и површину троугла.
+
+\begin{solution}[\stretch 3]
+Висина у једнакостраничном троуглу: $h = \frac{\sqrt{3}}{2} a$.
+\[
+h = \frac{\sqrt{3}}{2}\cdot \measure{\variant{6}{9}{12}{8}}{cm}
+= \measure{\variant{3\sqrt{3}}{\tfrac{9\sqrt{3}}{2}}{6\sqrt{3}}{4\sqrt{3}}}{cm}.
+\]
+Обим: $O = 3\cdot \measure{\variant{6}{9}{12}{8}}{cm} = \measure{\variant{18}{27}{36}{24}}{cm}$.
+Површина: $P = \frac{1}{2} a h = \frac{1}{2}\cdot \measure{\variant{6}{9}{12}{8}}{cm} \cdot h
+= \measure{\variant{\tfrac{9\sqrt{3}}{2}}{\tfrac{81\sqrt{3}}{4}}{36\sqrt{3}}{16\sqrt{3}}}{cm^2}$.
+(Могућ је и бржи начин рачунања: $P=\frac{\sqrt3}{4}a^2$.)
+\end{solution}
+
+\question[4] %10.
+%(Питагорина – правоугаоник)  
+Правоугаоник има странице $\measure{\variant{6}{7}{9}{5}}{cm}$ и $\measure{\variant{8}{24}{12}{12}}{cm}$. Израчунај дужину дијагонале, обим и површину.
+
+\begin{solution}[\stretch 3]
+Дијагонала $d=\sqrt{a^2+b^2} = \measure{\sqrt{\variant{6^2+8^2}{7^2+24^2}{9^2+12^2}{5^2+12^2}}}{cm}
+= \measure{\variant{10}{25}{15}{13}}{cm}$.
+Обим: $O = 2(a+b) = \measure{\variant{28}{62}{42}{34}}{cm}$.
+Површина: $P = a\cdot b = \measure{\variant{48}{168}{108}{60}}{cm^2}$.
+\end{solution}
+
+\question %11.
+%(Питагорина – квадрат/ромб)
+\begin{parts}
+\part[2]
+	Квадрат има дијагоналу $\measure{\variant{10}{12}{8}{14}}{cm}$.
+	Израчунај страницу и површину квадрата.
+\part[3]
+	Ромб има дијагонале
+	$d_1 = \measure{\variant{16}{9}{15}{24}}{cm}$ и
+	$d_2 = \measure{\variant{12}{12}{20}{10}}{cm}$.
+	Израчунај страницу, површину и висину ромба.
+\end{parts}
+
+\begin{solution}[\stretch 3]
+\begin{parts}
+\part
+Страница квадрата: $a = \dfrac{d}{\sqrt{2}} = \measure{\dfrac{\variant{10}{12}{8}{14}}{\sqrt{2}}}{cm}$.  
+Површина квадрата: $P = a^2 = \measure{\frac{d^2}{2}}{cm^2} = \measure{\variant{50}{72}{32}{98}}{cm^2}$.
+
+\part
+За ромб са истим дијагоналама $d_1$ и $d_2$, површина је
+$P = \dfrac{d_1 d_2}{2}$ и страница
+$$
+	 a = \sqrt{
+ 		\left(
+ 			\frac{d_1}{2}
+ 		\right)^2 + \left(
+	 		\frac{d_2}{2}
+ 		\right)^2
+ 	}.
+$$
+Висина ромба се израчунава на основу формуле за површину
+$P = ah$ израчунавањем непознатог чиниоца $h$.
+\end{parts}
+\end{solution}
+
+\question[5] %12.
+%(Питагорина – трапез / правоугли трапез)  
+Правоугли трапез има основице
+$\measure{\variant{10}{12}{14}{16}}{cm}$ и
+$\measure{\variant{6}{8}{9}{10}}{cm}$
+(већа и мања основица) и један од кракова (десни)
+$\measure{\variant{6}{5}{8}{6}}{cm}$ нормалан на основицу.
+Израчунај висину, други крак, обим и површину трапеза.
+
+\begin{solution}[\stretch 4]
+Нека су $a$ и $c$ основице (већа је $a$), $b$ десни крак (нормалан на основице), $d$ леви крак, $h$ висина. Пошто је десни крак нормалан на основице, $h=b=\measure{\variant{6}{5}{8}{6}}{cm}$. Одстојање између пројекције мање и већe основице је
+$a-c$%; половина разлике је $\frac{a-c}{2}$
+. Према Питагориној теореми:
+\[
+	d = \sqrt{
+		(
+			\variant{10}{12}{14}{16} -
+			\variant{6}{8}{9}{10}
+		)^2 + \variant{6}{5}{8}{6}^2
+	} = \sqrt{
+		\variant{16}{16}{25}{36} + \variant{36}{25}{64}{36}
+	} = \sqrt{\variant{52}{\measure{41}{cm}}{\measure{91}{cm}}{72}}
+	\variant{= \measure{2 \sqrt{13}}{cm}}
+	{}{}{= \measure{6 \sqrt{2}}{cm}}.
+\]
+
+Обим:
+$$
+	O = a + c + b + d
+	= \variant{10}{12}{14}{16}
+	+ \variant{6}{8}{9}{10}
+	+ \variant{6}{5}{8}{6}
+	+ \variant{2 \sqrt{13}}{\sqrt{41}}{\sqrt{91}}{6 \sqrt{2}}
+	= \measure{
+		\big(
+			\variant{22}{25}{31}{32}
+			+ \variant{2 \sqrt{13}}{\sqrt{41}}{\sqrt{91}}{6 \sqrt{2}}
+		\big)
+	}{cm}.
+$$
+
+Површина:
+$$
+	P = \frac{a+c}{2}\cdot h
+	= \frac{
+		\variant{10}{12}{14}{16} +
+		\variant{6}{8}{9}{10}
+	}{2} \cdot \variant{6}{5}{8}{6}
+	= \variant{8}{10}{23}{13} \cdot \variant{6}{5}{4}{6}
+	= \measure{\variant{48}{50}{92}{78}}{cm^2}.
+$$
+%(У конкретној варијанти унутар $\variant$ убаци вредности и поједностави.)
+\end{solution}
+
+\end{questions}
+
+\end{document}
