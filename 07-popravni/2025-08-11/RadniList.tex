@@ -1,0 +1,217 @@
+%\documentclass[11pt,a5paper,twoside,addpoints,noanswers]{exam} % задаци
+\documentclass[11pt,a5paper,twoside,addpoints,answers]{exam} % решења
+
+\usepackage[OT2]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[serbian]{babel}
+\usepackage{multicol}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a5paper, margin=1.5cm}
+
+% Макро за јединице мере
+\newcommand{\measure}[2]{\mathrm{#1\,#2}}
+
+% Макро за варијанте (пример: \variant{a}{b}{c})
+\newcommand{\variant}[3]{#1}
+
+% Подешавања за exam
+%\printanswers % <- уклони % да се виде решења
+\renewcommand{\solutiontitle}{\noindent\textrm{Решење:}\enspace}
+\pointsinmargin
+\pointname{}
+\hqword{Задатак:}
+\hpgword{Страница:}
+\hpword{Поени:}
+\hsword{Остварено:}
+\htword{Збир}
+\cellwidth{1em}
+\cfoot[]{Страница \thepage\ од \numpages}
+\addto{\captionsserbian}{\renewcommand{\abstractname}{Упут{}ство}}
+
+\title{$\mathrm{VII}$ разред, варијанта \variant{1}{2}{3}}
+\author{Припремна настава – Први дан}
+\date{Станишић, 11.~август 2025.}
+
+\begin{document}
+\maketitle
+\thispagestyle{headandfoot}
+
+\begin{center}
+\gradetable[h]
+\end{center}
+
+\begin{questions}
+
+\section{Лакши задаци (загревање)}
+
+\question[2]
+Израчунај:
+\begin{multicols}{3}
+\begin{parts}
+\part $\sqrt{\variant{49}{81}{121}}$
+\ifprintanswers
+\else\answerline
+\fi
+%\part $\sqrt[3]{\variant{125}{64}{216}}$ % Кубни корен није у плану у основној школи.
+\part $\left|\variant{-5}{8}{-12}\right|$ % Ученик треба да разликује апсолутну од супротне вредности.
+\ifprintanswers
+\else\answerline
+\fi
+\part $\frac{\variant{24}{36}{48}}{\variant{6}{9}{16}}$
+\ifprintanswers
+\else\answerline
+\fi
+\end{parts}
+\end{multicols}
+\begin{solution}[\stretch 1]
+\begin{parts}
+\begin{multicols}{3}
+\part $\sqrt{\variant{49}{81}{121}} = \variant{7}{9}{11}$
+%\part $\sqrt[3]{\variant{125}{64}{216}} = \variant{5}{4}{6}$
+\part $|\variant{-5}{8}{-12}| = \variant{5}{8}{12}$
+\part $\frac{\variant{24}{36}{48}}{\variant{6}{9}{16}} = \variant{4}{4}{3}$
+\end{multicols}
+\end{parts}
+\end{solution}
+\ifprintanswers\newpage
+\else
+\fi
+
+\question[2]
+Заокружи који од наведених бројева је ирационалан:  
+% Иза зареза који није децимални не треба смањити размак.
+$$ \variant
+{\sqrt{50},\quad 7,\quad \frac23}
+{\sqrt{8},\quad -5,\quad 1,\!25}
+{\sqrt{3},\quad -2,\quad \frac{5}{4}}
+$$
+\begin{solution}[\stretch 1]
+Ирационални број је:
+\variant{$\sqrt{50}$}{$\sqrt{8}$}{$\sqrt{3}$}
+\end{solution}
+
+\question[3]
+Катете правоуглог троугла имају дужине $\measure{\variant{6}{8}{5}}{cm}$ и $\measure{\variant{8}{15}{12}}{cm}$. Израчунај дужину хипотенузе.
+\begin{solution}[\stretch 3]
+$$
+c = \sqrt{a^2 + b^2} = \sqrt{\variant{6}{8}{5}^2 + \variant{8}{15}{12}^2} = \sqrt{\variant{36+64}{64+225}{25+144}} = \sqrt{\variant{100}{289}{169}} = \measure{\variant{10}{17}{13}}{cm}
+$$
+\end{solution}
+\ifprintanswers
+\else\answerline\newpage
+\fi
+
+\section{Средњи задаци (стандардни ниво)}
+
+\question[4]
+У табели допуни вредности:
+$$
+\begin{array}{|c|c|c|} \hline
+x & x^2 & \sqrt{x^2} \\ \hline
+\variant{3}{-4}{\frac{5}{2}} & & \\ \hline
+\variant{-7}{\frac{3}{4}}{-1,\!2} & & \\ \hline
+\end{array}
+$$
+\begin{solution}[\stretch 1]
+Први ред:
+\quad $x^2 = \variant{9}{16}{\frac{25}{4}}$,
+\quad $\sqrt{x^2} = \variant{3}{4}{\frac{5}{2}}$
+
+Други ред:
+\quad $x^2 = \variant{49}{\frac{9}{16}}{1,\!44}$,
+\quad $\sqrt{x^2} = \variant{7}{\frac{3}{4}}{1,\!2}$
+\end{solution}
+\ifprintanswers\newpage
+\else
+\fi
+
+\question[4]
+Хипотенуза правоуглог троугла има дужину $\measure{\variant{13}{25}{10}}{cm}$, а једна катета $\measure{\variant{5}{20}{6}}{cm}$. Израчунај обим и површину троугла.
+\begin{solution}[\stretch 4]
+\begin{align*}
+b &= \sqrt{c^2 - a^2}
+= \sqrt{\variant{13}{25}{10}^2 - \variant{5}{20}{6}^2}
+= \sqrt{\variant{169-25}{625-400}{100-36}}
+= \sqrt{\variant{144}{225}{64}} = \variant{12}{15}{8}
+\\
+O &= a + b + c = \variant{5+12+13}{20+15+25}{6+8+10}
+= \measure{\variant{30}{60}{24}}{cm}
+\\
+P &= \frac{a\cdot b}{2}
+= \frac{\variant{5}{20}{6}\cdot\variant{12}{15}{8}}{2}
+= \measure{\variant{30}{150}{24}}{cm^2}
+\end{align*}
+\end{solution}
+\ifprintanswers
+\else\newpage
+\fi
+
+\question[3]
+Израчунај:
+$$
+\frac{\sqrt{\variant{49}{81}{25}} - \sqrt{\variant{9}{16}{4}}}{\sqrt{\variant{4}{9}{16}}}
+% У основној школи се не учи кубни корен, само квадратни.
+$$
+\begin{solution}[\stretch 3]
+Бројилац: $\sqrt{\variant{49}{81}{25}} - \sqrt{\variant{9}{16}{4}}
+= \variant{7-3}{9-4}{5-2} = \variant{4}{5}{3}$
+
+Именилац: $\sqrt{\variant{4}{9}{16}} = \variant{2}{3}{4}$
+
+Цео израз: $\frac{\variant{4}{5}{3}}{\variant{2}{3}{4}}
+= \variant{2}{\frac{5}{3}}{\frac{3}{4}}$
+\end{solution}
+\ifprintanswers\newpage
+\else\answerline
+\fi
+
+\section{Тежи задаци (изазов)}
+% Ученик који полаже поправни испит није показивао значајније
+% интересовање за учење током школске године.
+% Тешко је мотивисати ученика да прихвати изазов у интелектуалној сфери.
+
+\question[5]
+Правоугли троугао има катете $\measure{\variant{9}{15}{7}}{cm}$ и $\measure{\variant{12}{8}{24}}{cm}$. Израчунај полупречник уписаног круга.
+\begin{solution}[\stretch 4]
+\begin{align*}
+c &= \sqrt{a^2 + b^2} = \sqrt{\variant{81+144}{225+64}{49+576}}
+= \sqrt{\variant{225}{289}{625}} = \variant{15}{17}{25}
+\\
+r &= \frac{a+b-c}{2}
+= \frac{\variant{9+12-15}{15+8-17}{7+24-25}}{2}
+= \frac{\variant{6}{6}{6}}{2} = \measure 3{cm}
+\end{align*}
+\end{solution}
+\ifprintanswers
+\else\newpage
+\fi
+
+\question[5]
+(Домаћи) Израчунај површину троугла са страницама
+$\measure{\variant{13}{10}{9}}{cm}$,
+$\measure{\variant{14}{15}{10}}{cm}$ и
+$\measure{\variant{15}{7}{15}}{cm}$.
+\begin{solution}[\stretch 5]
+\begin{align*}
+s &= \frac{a+b+c}{2}
+= \frac{\variant{13+14+15}{10+15+7}{9+10+15}}{2}
+= \frac{\variant{42}{32}{34}}{2} = \variant{21}{16}{17}
+\\
+P &= \sqrt{s(s-a)(s-b)(s-c)} = \sqrt{\variant
+	{21\cdot 8\cdot 7\cdot 6}
+	{16\cdot 6\cdot 1\cdot 9}
+	{17\cdot 8\cdot 7\cdot 2}}
+\\
+P &= \sqrt{\variant
+	{9\cdot 16\cdot 49}
+	{16\cdot 9\cdot 6}
+	{17\cdot 7\cdot 8\cdot 2}}
+= \measure{\variant{84}{12\sqrt{6}}{4\sqrt{119}}}{cm^2}
+\end{align*}
+\end{solution}
+
+\end{questions}
+
+\end{document}
