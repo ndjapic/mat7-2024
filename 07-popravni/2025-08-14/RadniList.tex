@@ -1,0 +1,228 @@
+%\documentclass[11pt,a5paper,twoside,addpoints,noanswers]{exam} % задаци
+\documentclass[11pt,a5paper,twoside,addpoints,answers]{exam} % решења
+
+\usepackage[OT2]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[serbian]{babel}
+\usepackage{multicol}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a5paper, margin=1.5cm}
+
+% Макро за јединице мере
+\newcommand{\measure}[2]{#1\,\mathrm{#2}}
+
+% Макро за варијанте
+\newcommand{\variant}[3]{#1}
+
+% Подешавања за exam
+%\printanswers % <- откоментаришите да бисте видели решења
+\renewcommand{\solutiontitle}{\noindent\textrm{Решење:}\enspace}
+\pointsinmargin
+\pointname{}
+\hqword{Задатак:}
+\hpgword{Страница:}
+\hpword{Поени:}
+\hsword{Остварено:}
+\htword{Збир}
+\vqword{Задатак:}
+\vpgword{Страница:}
+\vpword{Поени:}
+\vsword{Остварено:}
+\vtword{Збир}
+\cellwidth{1em}
+\cfoot[]{Страница \thepage\ од \numpages}
+\addto{\captionsserbian}{\renewcommand{\abstractname}{Упут{}ство}}
+
+\title{Припремна настава}
+\author{$\mathrm{VII}_\Box$ Полиноми 2/2. Круг
+ \thanks{
+  29 одлично,
+  22 врло добро,
+  15 добро,
+   8 довољно.
+ }
+}
+\date{Станишић, 14.\ август 2025.}
+
+\pagestyle{headandfoot}
+\runningheader{Полиноми 2/2. Круг}
+	{}{варијанта \variant 123}
+\runningfooter{четвртак}
+	{}{Страна \thepage\ од \numpages}
+
+\begin{document}
+\maketitle
+\thispagestyle{headandfoot}
+
+\ifprintanswers\else
+\begin{flushleft}\scriptsize
+\gradetable[h]
+\end{flushleft}
+\fi
+
+\begin{abstract}
+Пажљиво прочитај сваки задатак. У поступку пиши све потребне рачуне. Решења пиши у сређеном облику.
+\end{abstract}
+
+\begin{questions}
+
+% =========================
+% I. ПОЛИНОМИ – 2. део
+% =========================
+\section*{Полиноми — део 2}
+
+\question[3]
+Разложи на факторе:
+\[
+\variant{
+x^2+5x+6
+}{
+a^2-9
+}{
+m^2+7m+10
+}.
+\]
+\begin{solution}[\stretch 2]
+\variant{
+$(x+2)(x+3)$
+}{
+$(a-3)(a+3)$
+}{
+$(m+2)(m+5)$
+}.
+\end{solution}
+
+\question[3]
+Разложи на факторе:
+\[
+\variant{
+4x^2-12x
+}{
+y^2+6y
+}{
+5p^2-15p
+}.
+\]
+\begin{solution}[\stretch 2]
+\variant{
+$4x(x-3)$
+}{
+$y(y+6)$
+}{
+$5p(p-3)$
+}.
+\end{solution}
+
+\question[4]
+Скрати разломак:
+\[
+\variant{
+\dfrac{6x^2y}{9xy}
+}{
+\dfrac{15a^3}{20a}
+}{
+\dfrac{14m^4n}{21m^2n}
+}.
+\]
+\begin{solution}[\stretch 3]
+\variant{
+$\dfrac{2x}{3}$
+}{
+$\dfrac{3a^2}{4}$
+}{
+$\dfrac{2m^2}{3}$
+}.
+\end{solution}
+
+\ifprintanswers\else\newpage\fi
+
+\question[4]
+Изрази као производ:
+\[
+\variant{
+x^2-4x+4
+}{
+a^2+8a+16
+}{
+m^2-10m+25
+}.
+\]
+\begin{solution}[\stretch 2]
+\variant{
+$(x-2)^2$
+}{
+$(a+4)^2$
+}{
+$(m-5)^2$
+}.
+\end{solution}
+
+\question[4]
+Помножи полиноме:
+\[
+\variant{
+(x+5)(x-5)
+}{
+(2a+3)(a+4)
+}{
+(m-7)(m+2)
+}.
+\]
+\begin{solution}[\stretch 3]
+\variant{
+$x^2-25$
+}{
+$2a^2+11a+12$
+}{
+$m^2-5m-14$
+}.
+\end{solution}
+
+% =========================
+% II. КРУГ
+% =========================
+\section*{Круг}
+
+\question[3]
+Полупречник круга је $r=\measure{\variant{3}{5}{7}}{cm}$. Израчунај пречник, обим и површину круга ($\pi\approx 3{,}14$).
+\begin{solution}[\stretch 4]
+Пречник: $d=2r=\measure{\variant{6}{10}{14}}{cm}$. \\
+Обим: $O=2\pi r\approx\measure{\variant{18{,}84}{31{,}40}{43{,}96}}{cm}$. \\
+Површина: $P=\pi r^2\approx\measure{\variant{28{,}26}{78{,}50}{153{,}86}}{cm^2}$.
+\end{solution}
+
+\ifprintanswers\else\newpage\fi
+
+\question[4]
+Дужина кружног лука је $l=\measure{\variant{15{,}7}{18{,}84}{31{,}4}}{cm}$ и одговара централном углу $\varphi=\variant{90^\circ}{120^\circ}{180^\circ}$. Израчунај полупречник круга ($\pi\approx 3{,}14$).
+\begin{solution}[\stretch 3]
+$l=\dfrac{\varphi}{360^\circ}\cdot 2\pi r$  
+$r=\dfrac{l\cdot 360^\circ}{2\pi\varphi}$.  
+\variant{
+$r\approx\dfrac{15{,}7\cdot 360}{2\cdot 3{,}14\cdot 90}=\measure{10}{cm}$
+}{
+$r\approx\dfrac{18{,}84\cdot 360}{2\cdot 3{,}14\cdot 120}=\measure{9}{cm}$
+}{
+$r\approx\dfrac{31{,}4\cdot 360}{2\cdot 3{,}14\cdot 180}=\measure{10}{cm}$
+}.
+\end{solution}
+
+\question[4]
+Површина кружног сектора је $P_s=\measure{\variant{12{,}57}{25{,}13}{50{,}27}}{cm^2}$ и одговара централном углу $\varphi=\variant{90^\circ}{180^\circ}{270^\circ}$. Израчунај полупречник круга ($\pi\approx 3{,}14$).
+\begin{solution}[\stretch 3]
+$P_s=\dfrac{\varphi}{360^\circ}\cdot \pi r^2$  
+$r=\sqrt{\dfrac{P_s\cdot 360^\circ}{\pi\varphi}}$.  
+\variant{
+$r\approx\sqrt{\dfrac{12{,}57\cdot 360}{3{,}14\cdot 90}}=\measure{4}{cm}$
+}{
+$r\approx\sqrt{\dfrac{25{,}13\cdot 360}{3{,}14\cdot 180}}=\measure{4}{cm}$
+}{
+$r\approx\sqrt{\dfrac{50{,}27\cdot 360}{3{,}14\cdot 270}}=\measure{4}{cm}$
+}.
+\end{solution}
+
+\end{questions}
+
+\end{document}
