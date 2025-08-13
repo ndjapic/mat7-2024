@@ -1,22 +1,23 @@
-\documentclass[10pt,a5paper,addpoints]{exam}
+\documentclass[11pt,a5paper,twoside,addpoints,noanswers]{exam} % задаци
+%\documentclass[10pt,a5paper,twoside,addpoints,answers]{exam} % решења
 
-\usepackage[a5paper,margin=1.5cm]{geometry}
-\usepackage{multicol}
-\usepackage{amssymb,amsmath}
-\usepackage{graphicx}
 \usepackage[OT2]{fontenc}
 \usepackage[utf8x]{inputenc}
 \usepackage[serbian]{babel}
+\usepackage{multicol}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a5paper, margin=1.5cm}
 
-% Макро за јединице мере (користити у мат. режиму)
+% Макро за јединице мере
 \newcommand{\measure}[2]{#1\,\mathrm{#2}}
 
-% Макро за 3 варијанте (подесити који аргумент је активан)
-\def\variant#1#2#3{#1}
+% Макро за варијанте
+\newcommand{\variant}[3]{#1}
 
-% Ако желите да се прикажу решења, откоментаришите:
-% \printanswers
-
+% Подешавања за exam
+%\printanswers % <- откоментаришите да бисте видели решења
 \renewcommand{\solutiontitle}{\noindent\textrm{Решење:}\enspace}
 \pointsinmargin
 \pointname{}
@@ -25,22 +26,45 @@
 \hpword{Поени:}
 \hsword{Остварено:}
 \htword{Збир}
-\cellwidth{0.9em}
-\cfoot[]{Страна \thepage\ од \numpages}
+\vqword{Задатак:}
+\vpgword{Страница:}
+\vpword{Поени:}
+\vsword{Остварено:}
+\vtword{Збир}
+\cellwidth{1em}
+\cfoot[]{Страница \thepage\ од \numpages}
+\addto{\captionsserbian}{\renewcommand{\abstractname}{Упут{}ство}}
 
-\title{Припремна настава – Дан 3\\ \small Многоугао \& Полиноми (1/2)}
-\author{$\mathrm{VII}_\Box$, варијанта \variant{1}{2}{3}}
-\date{Станишић, август 2025.}
+\title{Припремна настава}
+\author{$\mathrm{VII}_\Box$ Многоугао. Полиноми 1/2
+ \thanks{
+  29 одлично,
+  22 врло добро,
+  15 добро,
+   8 довољно.
+ }
+}
+\date{Станишић, 13.\ август 2025.}
+
+\pagestyle{headandfoot}
+%\firstpageheader{Примена Питагорине теореме. Степеновање}
+%	{}{варијанта \variant 1234}
+\runningheader{Многоугао. Полиноми 1/2}
+	{}{варијанта \variant 123}
+%\firstpagefooter{Припремна настава}
+%	{}{Страна \thepage\ од \numpages}
+\runningfooter{среда}
+	{}{Страна \thepage\ од \numpages}
 
 \begin{document}
 \maketitle
 \thispagestyle{headandfoot}
 
-\noindent Име и презиме:\enspace\underline{\makebox[0.45\textwidth][s]{\hfill}}
-
-\begin{flushleft}
+\ifprintanswers\else
+\begin{flushleft}\scriptsize
 \gradetable[h]
 \end{flushleft}
+\fi
 
 \begin{abstract}
 Пре израде пажљиво прочитај текст задатка. Кратко и јасно наведи поступак. Решења полинома своди на сређен облик.
@@ -51,7 +75,7 @@
 % =========================
 % I. МНОГОУГАО
 % =========================
-\section*{I Многоугао}
+\section*{Многоугао}
 
 \question[3]
 Одреди број страница $n$ и збир унутрашњих углова $S$ правилног
@@ -127,7 +151,7 @@ $\measuredangle B=\variant{60^\circ}{75^\circ}{45^\circ}$.
 % =========================
 % II. ПОЛИНОМИ – 1. део
 % =========================
-\section*{II Полиноми — део 1}
+\section*{Полиноми — део 1}
 
 \question[2]
 Одреди коефицијент и степен монома
