@@ -1,4 +1,4 @@
-\documentclass[11pt,a5paper,twoside,addpoints,answers]{exam} % answers|noanswers
+\documentclass[11pt,a5paper,twoside,addpoints,noanswers]{exam} % answers|noanswers
 
 \usepackage[OT2]{fontenc}
 \usepackage[utf8x]{inputenc}
@@ -29,19 +29,19 @@
 \vpword{Поени:}
 \vsword{Остварено:}
 \vtword{Збир}
-\cellwidth{1em}
+\cellwidth{0.6em}
 \cfoot[]{Страница \thepage\ од \numpages}
 \addto{\captionsserbian}{\renewcommand{\abstractname}{Упут{}ство}}
 
-\title{Припремна настава}
+\title{Припремни рад}
 \author{$\mathrm{VII}_\Box$ Полиноми 2/2. Круг
-  \thanks{29 одлично,\; 22 врло добро,\; 15 добро,\; 8 довољно.}
+  \thanks{33 одлично,\; 25 врло добро,\; 17 добро,\; 9 довољно.}
 }
 \date{Станишић, 14.\ август 2025.}
 
 \pagestyle{headandfoot}
 \runningheader{Полиноми 2/2. Круг}{}{варијанта \variant{1}{2}{3}}
-\runningfooter{}{}{Страна \thepage\ од \numpages}
+\runningfooter{четвртак}{}{Страна \thepage\ од \numpages}
 
 \begin{document}
 \maketitle
@@ -50,20 +50,22 @@
 \ifprintanswers\else
 \begin{flushleft}\scriptsize
 \gradetable[h]
+%
+%\combinedgradetable[h][questions]
 \end{flushleft}
-\fi
 
 \begin{abstract}
 Пажљиво читај текст задатка. Наводи поступак (кораке) и своди полиноме на сређен облик.
 Код круга у већини задатака тражи се тачна вредност (са $\pi$); само ако је у загради дато $\pi\approx\cdots$, рачуна се приближно.
 \end{abstract}
+\fi
 
 \begin{questions}
 
 % =========================================================
 % I. ПОЛИНОМИ — део 2 (квадрат бинома, разлика квадрата, растављање)
 % =========================================================
-\section*{Полиноми — део 2}
+\ifprintanswers\else\section*{Полиноми — део 2}\fi
 
 \question[3]
 Примени формулу за квадрат бинома и среди израз:
@@ -93,6 +95,8 @@ $a^2-b^2=(a-b)(a+b)$, па је
 \variant{p^2-49}{36x^2-25}{m^2-9n^2}.
 \]
 \end{solution}
+
+\ifprintanswers\else\newpage\fi
 
 \question[3]
 Растави на чиниоце:
@@ -153,12 +157,10 @@ $(3m-2n)(3m+2n)$.
 }
 \end{solution}
 
-\ifprintanswers\else\newpage\fi
-
 % =========================
 % II. КРУГ
 % =========================
-\section*{Круг}
+\ifprintanswers\else\section*{Круг}\fi
 
 \question[2]
 Централни угао над луком износи
@@ -186,6 +188,8 @@ O=14\pi,\ r=7,\ P=49\pi
 }\ \ (\mathrm{cm},\ \mathrm{cm}^2).
 \]
 \end{solution}
+
+\ifprintanswers\else\newpage\fi
 
 \question[3]
 Полупречник је
@@ -313,7 +317,7 @@ $P=\pi( (2\sqrt3)^2-(\sqrt3)^2 )=\pi(12-3)=9\pi\ \mathrm{cm}^2$.
 }
 \end{solution}
 
-\ifprintanswers\else\newpage\fi
+%\ifprintanswers\else\newpage\fi % Не треба пет страница
 
 \question[3]
 \variant{
