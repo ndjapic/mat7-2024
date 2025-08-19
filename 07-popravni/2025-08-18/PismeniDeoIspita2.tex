@@ -1,0 +1,85 @@
+\documentclass[11pt,a5paper,twoside,addpoints,noanswers]{exam}
+
+\usepackage[OT2]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb,geometry}
+\geometry{a5paper, margin=1.5cm}
+
+% Јединице мере
+\newcommand{\measure}[2]{#1\,\mathrm{#2}}
+
+% Макро за 3 варијанте
+\newcommand{\variant}[1]{#1}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Решење:}\par\noindent}
+\addto{\captionsserbian}{\renewcommand{\abstractname}{Упут{}ство}}
+
+\pointsinmargin
+\pointname{}
+
+\title{Писмени део поправног испита}
+\author{Математика, 7. разред}
+\date{Трајање: 45 минута}
+
+\begin{document}
+\maketitle
+
+\ifprintanswers\else
+\begin{flushleft}\scriptsize
+\gradetable[h]
+\end{flushleft}
+\begin{abstract}\small
+Пажљиво читај текст задатка. Наводи поступак (кораке) и своди полиноме на сређен облик.  
+Код круга се тражи \emph{тачна} вредност (са $\pi$), осим ако у задатку пише приближна вредност $\pi$.
+\end{abstract}
+\fi
+
+\ifprintanswers\else
+\newpage
+\fi
+
+% =====================================================
+% Варијанта 2
+% =====================================================
+\variant{Варијанта 2}
+
+\begin{questions}
+
+\question[3] Израчунај обим круга ако је $d=14$.
+\begin{solution}[\stretch{2}]
+$O=\pi d=\pi\cdot 14=14\pi$.  
+\end{solution}
+
+\question[4] Растави на чиниоце: $x^2-25$.
+\begin{solution}[\stretch{2}]
+$x^2-25=(x-5)(x+5)$.  
+Поступак: користимо формулу $a^2-b^2=(a-b)(a+b)$.  
+\end{solution}
+
+\question[4] Израчунај дужину лука круга ако је $r=10$, угао $45^\circ$.
+\begin{solution}[\stretch{3}]
+$l=\frac{\alpha}{360^\circ}\cdot 2\pi r=\frac{45}{360}\cdot 20\pi=\tfrac{1}{8}\cdot 20\pi=2.5\pi$.  
+\end{solution}
+
+\question[4] Колико дијагонала има десетоугао?
+\begin{solution}[\stretch{2}]
+$D=\tfrac{10\cdot 7}{2}=35$.  
+\end{solution}
+
+\question[3] Израчунај обим кружног исечка $r=12$, $\alpha=90^\circ$.
+\begin{solution}[\stretch{3}]
+Обим исечка: $O=2r+l=24+ \frac{90}{360}\cdot 2\pi\cdot 12=24+6\pi$.  
+\end{solution}
+
+\question[4] Конструиши кружницу уписану у ромб.
+\begin{solution}[\stretch{4}]
+1. Конструисати ромб.  
+2. Повезати симетрале углова.  
+3. Њихов пресек је центар уписане кружнице.  
+4. Описати кружницу са тим центром и полупречником до странице.  
+\end{solution}
+
+\end{questions}
+
+\end{document}
