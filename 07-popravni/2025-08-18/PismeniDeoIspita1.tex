@@ -1,0 +1,95 @@
+\documentclass[11pt,a5paper,twoside,addpoints,noanswers]{exam}
+
+\usepackage[OT2]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[serbian]{babel}
+\usepackage{amsmath,amssymb,geometry}
+\geometry{a5paper, margin=1.5cm}
+
+% Јединице мере
+\newcommand{\measure}[2]{#1\,\mathrm{#2}}
+
+% Макро за 3 варијанте
+\newcommand{\variant}[1]{#1}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Решење:}\par\noindent}
+\addto{\captionsserbian}{\renewcommand{\abstractname}{Упут{}ство}}
+
+\pointsinmargin
+\pointname{}
+
+\title{Писмени део поправног испита}
+\author{Математика, 7. разред}
+\date{Трајање: 45 минута}
+
+\begin{document}
+\maketitle
+
+\ifprintanswers\else
+\begin{flushleft}\scriptsize
+\gradetable[h]
+\end{flushleft}
+\begin{abstract}\small
+Пажљиво читај текст задатка. Наводи поступак (кораке) и своди полиноме на сређен облик.  
+Код круга се тражи \emph{тачна} вредност (са $\pi$), осим ако у задатку пише приближна вредност $\pi$.
+\end{abstract}
+\fi
+
+\ifprintanswers\else
+\newpage
+\fi
+
+% =====================================================
+% Варијанта 1
+% =====================================================
+\variant{Варијанта 1}
+
+\begin{questions}
+
+\question[4] Растави на чиниоце: $x^2+6x+9$.
+\begin{solution}[\stretch{2}]
+$x^2+6x+9=(x+3)(x+3)=(x+3)^2$.  
+Поступак:  
+1. Препознајемо да је израз облик $a^2+2ab+b^2$.  
+2. Упоређујемо: $x^2+2\cdot 3x+3^2$.  
+3. Дакле, резултат је $(x+3)^2$.
+\end{solution}
+
+\question[3] Израчунај површину круга полупречника $r=7$.
+\begin{solution}[\stretch{2}]
+$P=\pi r^2=\pi\cdot 7^2=49\pi$.  
+Кораци:  
+1. Запишемо формулу $P=\pi r^2$.  
+2. Уместо $r$ упишемо $7$.  
+3. Добијемо $49\pi$.
+\end{solution}
+
+\question[4] Израчунај дужину тетиве у кругу полупречника $13$ ако је растојање од центра до тетиве $5$.
+\begin{solution}[\stretch{3}]
+Правимо правоугли троугао: полупречник, полутетива, растојање.  
+Питагорина теорема: $13^2=5^2+(\tfrac{c}{2})^2$.  
+$(\tfrac{c}{2})^2=169-25=144$, $\tfrac{c}{2}=12$.  
+$c=24$.  
+\end{solution}
+
+\question[3] Израчунај број дијагонала у седмоуглу.
+\begin{solution}[\stretch{2}]
+Формула: $D=\tfrac{n(n-3)}2$.  
+За $n=7$: $D=\tfrac{7\cdot 4}2=14$.  
+\end{solution}
+
+\question[4] Конструиши тангенту на кружницу $k(O,r)$ у тачки $T$.
+\begin{solution}[\stretch{4}]
+1. Спојити $O$ и $T$.  
+2. Конструисати нормалу на $OT$ у тачки $T$ (користећи конструисање правог угла).  
+3. Добијена права је тражена тангента.  
+\end{solution}
+
+\question[4] Израчунај површину кружног исечка ако је $r=6$, $\alpha=120^\circ$.
+\begin{solution}[\stretch{3}]
+$P=\frac{\alpha}{360^\circ}\pi r^2=\frac{120}{360}\pi\cdot 36=12\pi$.  
+\end{solution}
+
+\end{questions}
+
+\end{document}
